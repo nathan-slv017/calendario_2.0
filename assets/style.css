@@ -6,22 +6,92 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    width: 720px;
+    width: 1200px;
     margin: 20px auto;
+    text-align: center;
 }
 .container h1, .react{
     text-align: center;
 }
-
-.janeiro{
-    background-color: aqua;
+.meses{
+    display: grid;
+    grid: auto auto auto auto/ auto auto auto ;
+    justify-content: center;
 }
 
+.tabela{
+    width: 300px;
+    margin: 20px;
+}
 .mes{
     display: grid;
-    grid: auto auto auto auto  / auto 30px 30px 30px auto 2px auto 2px auto 2px auto 2px auto 2px auto 2px ;
-    grid
+    grid: auto auto auto auto auto / auto auto auto auto auto auto auto ;
+    text-align: center;
+    font-weight: bold;
 }
 .diaMod{
+    font-size: 10px;
+    padding: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    margin: 2px;
+    text-align: center;
+    border-radius: 50%;
     
+}
+h3{
+    text-align: center;
+}
+button{
+    height: 30px;
+    width: 80px;
+}
+.bom{
+    background-color: rgb(31, 140, 31);
+    border: none;
+    transition:background-color 1s;
+}
+.bom:hover{
+    background-color: rgb(28, 252, 46);
+}
+
+.medíano{
+    background-color: rgb(136, 143, 5);
+    border: none;
+    transition:background-color 1s;
+}
+.medíano:hover{
+    background-color: rgb(211, 252, 28);
+}
+
+.ruim{
+    background-color: rgb(140, 44, 31);
+    border: none;
+    transition:background-color 1s;
+}
+.ruim:hover{
+    background-color: rgb(252, 28, 28);
+}
+
+.diaBom{
+    background-color:rgb(28, 252, 46) ;
+}
+.diaMediano{
+    background-color: rgb(211, 252, 28);
+}
+.diaRuim{
+    background-color: rgb(252, 28, 28);
+}
+
+.anoAleatorio{
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    background-color: greenyellow;
 }
