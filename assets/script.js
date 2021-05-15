@@ -171,14 +171,14 @@ function of(){
 
         todosOsDias.forEach((dia) =>{
             cadaDia = rand();
-            if(cadaDia == 1) {
+            if(cadaDia == 1 || cadaDia == 0) {
                 dia.classList.add('diaBom');
                 
             }
             if(cadaDia == 2) {
                 dia.classList.add('diaMediano');
             }
-            if(cadaDia == 3){
+            if(cadaDia == 3 || cadaDia == 4){
                 dia.classList.add('diaRuim');
             }
         })
