@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 720px;
+    margin: 20px auto;
+}
+.container h1, .react{
+    text-align: center;
+}
+
+.janeiro{
+    background-color: aqua;
+}
+
+.mes{
+    display: grid;
+    grid: auto auto auto auto  / auto 30px 30px 30px auto 2px auto 2px auto 2px auto 2px auto 2px auto 2px ;
+    grid
+}
+.diaMod{
+    
+}
