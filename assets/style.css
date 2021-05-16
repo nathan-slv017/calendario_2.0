@@ -13,6 +13,10 @@ body{
 .container h1, .react{
     text-align: center;
 }
+h1{
+    margin: 10px;
+    text-align: center;
+}
 .meses{
     display: grid;
     grid: auto auto auto auto/ auto auto auto ;

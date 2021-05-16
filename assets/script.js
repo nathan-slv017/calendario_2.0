@@ -1,3 +1,38 @@
+const meses = document.querySelector('.meses');
+
+function criaMeses(mes, diaSemana, ulDia){
+    let tabela = document.createElement('div');
+    tabela.classList.add('tabela');
+    tabela.innerHTML = `<h3>${mes}</h3>`
+
+    let mesEscolhido = document.createElement('div');
+    mesEscolhido.classList.add('mes');
+    
+
+    mesEscolhido.innerHTML = `<div>DOM</div><div>SEG</div><div>TER</div><div>QUA</div><div>QUI</div><div>SEX</div><div>SAB</div>`
+    for(let i = 0; i < diaSemana; i++){
+        mesEscolhido.innerHTML += '<div>'
+    }
+
+    for(let i = 1; i < ulDia + 1; i++){
+        mesEscolhido.innerHTML += `<div class="diaMod">${i}</div>`
+    }
+    tabela.appendChild(mesEscolhido);
+    meses.appendChild(tabela);
+}
+
+criaMeses('Janeiro', 5, 31);
+criaMeses('Fevereiro', 1, 28);
+criaMeses('Março',1, 31 );
+criaMeses('Abril', 4, 30);
+criaMeses('Maio', 6, 31);
+criaMeses('Junho', 2, 30);
+criaMeses('Julho', 4, 31);
+criaMeses('Agosto', 0, 31);
+criaMeses('Setembro', 3, 30);
+criaMeses('Outubro', 5, 30);
+criaMeses('Novembro', 1, 30);
+criaMeses('Dezembrp', 3, 31);
 const btnBom = document.querySelector('.bom');
 const btnMediano = document.querySelector('.medíano');
 const btnRuim = document.querySelector('.ruim');
